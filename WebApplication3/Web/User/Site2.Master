@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="WebApplication3.Web.User.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Justice Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+        <link href="../../Content/chocolat.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../../Content/meaue.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-3.1.1.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+<!-- start-smoth-scrolling-->
+    <script src="../../Scripts/move-top.js"></script>
+    <script src="../../Scripts/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <div>
+    <!--navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header ">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+						
+					</button>				
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center cl-effect-11">
+                        <li><a href="blog.html" data-hover="">社团主页</a></li>
+						<li><a href="index.html"  data-hover="">新闻</a></li>
+						<li><a href="about.html" data-hover="">活动</a></li>					
+						<li><a href="services.html" data-hover="">动态</a></li>
+						<li><a href="codes.html" data-hover="">相册</a></li>
+                        <li><a href="blog.html" data-hover="">留言墙</a></li>
+						<li><a href="#contact" class="scroll" data-hover="">其它</a></li>
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>
+				<div class="header-info">
+					<p>大学生社团网</p>
+					<h4>LOGO</h4>
+				</div>
+				<div class="clearfix"> </div>
+			</div>	
+		</nav>		
+	</div>	
+	<!--//navigation-->
+    </div>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
