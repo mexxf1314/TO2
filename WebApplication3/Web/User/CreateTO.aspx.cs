@@ -44,6 +44,7 @@ namespace WebApplication3.Web.User
                     TO_CreateTime = DateTime.Now,
                     TO_Create_Person = Session["UserCount_Someone"].ToString(),
                     TO_State = "available",
+                    To_Star=0
                 };
 
                int message = apm.AddTeam_Organizations(TO);

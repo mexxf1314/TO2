@@ -130,7 +130,9 @@ namespace WebApplication3.Model.Repository
                 TO_Signature=to.TO_Signature,
                 TO_State=to.TO_State,
                 TO_PersonStudyNumber=to.TO_PersonStudyNumber,
-                TO_Image=to.TO_Image
+                TO_Image=to.TO_Image,
+                To_Star=to.To_Star
+                
 
             };
             context.Set<Team_Organizations>().Add(To);
@@ -177,7 +179,7 @@ namespace WebApplication3.Model.Repository
                 Re.TO_Signature = To.TO_Signature;
                 Re.TO_State = To.TO_State;
                 Re.TO_Image = To.TO_Image;
-            
+                Re.To_Star = To.To_Star;
                 try
                 {
                     context.SaveChanges();

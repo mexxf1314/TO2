@@ -105,6 +105,7 @@
     <Content Include="Web\User\page2.html" />
     <Content Include="Web\User\WebForm1.aspx" />
     <Content Include="Web\User\My_TO.aspx" />
+    <Content Include="Web\User\School_TO.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,6 +209,13 @@
     </Compile>
     <Compile Include="Web\User\My_TO.aspx.designer.cs">
       <DependentUpon>My_TO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\User\School_TO.aspx.cs">
+      <DependentUpon>School_TO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\User\School_TO.aspx.designer.cs">
+      <DependentUpon>School_TO.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

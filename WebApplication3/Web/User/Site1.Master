@@ -86,7 +86,7 @@
                         <a href="#">我的社团</a>
                         <ul>
                             <li><a href="CreateTO.aspx">创建社团</a></li>
-                            <li><a href="#">本校社团</a></li>
+                            <li><a href="School_TO.aspx">本校社团</a></li>
                             <li><a href="My_TO.aspx">我的社团</a></li>
                         </ul>
                     </li>

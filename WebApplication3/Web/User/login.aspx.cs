@@ -18,10 +18,13 @@ namespace WebApplication3.Web.User
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            int count = context.User_Counts.Where(p => p.Users_Phone == Username.Text && p.Users_Password == Password.Text).Count();
-            if (count > 0)
+            //int count = context.User_Counts.Where(p => p.Users_Phone == Username.Text && p.Users_Password == Password.Text).Count();
+            var user = context.User_Counts.FirstOrDefault(p => p.Users_Phone == Username.Text && p.Users_Password == Password.Text);
+            if (user!=null)
             {
-                Session["UserCount_Someone"] = Username.Text.ToString();
+                Session["UserCount_Someone"] =user.Users_Phone;
+                Session["User_School"] = user.Users_School;
+                
                 Response.Redirect("index.aspx");
             }
             else

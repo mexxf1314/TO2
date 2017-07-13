@@ -20,5 +20,6 @@ namespace WebApplication3.Model
         public string TO_State { set; get; }
         public string TO_PersonStudyNumber { set; get; }
         public string TO_Image { set; get; }
+        public int To_Star { set; get; }
     }
 }
